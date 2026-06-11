@@ -1,8 +1,11 @@
 # Example Terraform variables file
 # Copy this file to terraform.tfvars and update the values as needed
 
-aws_region    = "ap-south-1"
-instance_type = "t3.small"
-ami_id        = "ami-0432978d0e25f2010"
-key_name      = "ubuntu_pem"
-instance_name = "HelloWorld"
+aws_region       = "ap-south-1"
+instance_type    = "t3.micro"
+ami_id           = "ami-07a00cf47dbbc844c"
+key_name         = "ubuntu_pem"
+instance_name    = "HelloWorld"
+s3_bucket_name   = "brijesh-terraform-2026-001"
+s3_versioning_enabled = true
+s3_block_public_access = true

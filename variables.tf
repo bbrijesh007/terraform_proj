@@ -27,3 +27,21 @@ variable "instance_name" {
   type        = string
   default     = "HelloWorld"
 }
+
+variable "s3_bucket_name" {
+  description = "Name of the S3 bucket (must be globally unique)"
+  type        = string
+  default     = "brijesh-terraform-2026-001"
+}
+
+variable "s3_versioning_enabled" {
+  description = "Enable versioning for S3 bucket"
+  type        = bool
+  default     = true
+}
+
+variable "s3_block_public_access" {
+  description = "Block all public access to S3 bucket"
+  type        = bool
+  default     = true
+}
