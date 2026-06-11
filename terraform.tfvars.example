@@ -1,0 +1,8 @@
+# Example Terraform variables file
+# Copy this file to terraform.tfvars and update the values as needed
+
+aws_region    = "ap-south-1"
+instance_type = "t3.small"
+ami_id        = "ami-0432978d0e25f2010"
+key_name      = "ubuntu_pem"
+instance_name = "HelloWorld"
